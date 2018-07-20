@@ -1,0 +1,29 @@
+body{
+	font-family: helvetica;
+}
+.nav{
+	background-color:  #FF5733;
+	margin: -10px;
+	padding-left:20px;
+}
+#pageTitle{
+	padding-left:20px;
+}
+#pageSubTitle{
+	padding-left: 1015px;
+	color: white;
+}
+#navBut{
+	padding-top:10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	padding-left:20px;
+	padding-right:10px;
+}
+#navBut > a:link{
+	color: black;
+	text-decoration: none;	
+}
+#navBut > a:hover{
+	background-color: #f9fbe7;
+}
