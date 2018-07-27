@@ -10,19 +10,43 @@
 	<table class="nav">
 		<tr>
 			<td><img alt="QuestionMark" src="./assets/images/questionmark.png" height="30" width="30"></td>
-			<td id="pageTitle"><h1>Forum Site</h1></td>
-			<td id="pageSubTitle"><p><i>Ask Questions</i></p></td>
-		</tr>
-	</table>
-	<table class="extNav">
-		<tr>
-			<td id="navBut"><a href="#">Home</a></td>
-			<td id="navBut"><a href="#">Profile</a></td>
-			<td id="navBut"><a href="#">Damn!<a></a></td>
+			<td id="pageTitle"> <h1>Forum Site</h1> </td>
+			<td id="pageSubTitle"> <p><i>Ask Questions</i></p> </td>
 		</tr>
 	</table>
 	
-	<div></div>
+	<br>
+	<br>
+	
+	<div class="content">
+		<div class="container">
+		
+			<table>
+				<tr class="card-header">
+					<td class="author"> 
+						<label>Posted By:</label>
+						<b> {{ user }}</b>
+					</td>
+					<td class="posted-date">
+						<label>Date:</label>
+						<label>{{ dd / mm / yy }}</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="question-title">
+						<h3>{{ Question ?? }}</h3>
+					</td>
+				</tr>
+				<tr>
+					<td class"answered">
+						<img alt="answered" src="./assets/images/tickmark.png">
+					</td>
+				</tr>
+			</table>
+		
+		</div>
+	</div>
 
 </body>
 </html>

@@ -3,27 +3,23 @@ body{
 }
 .nav{
 	background-color:  #FF5733;
-	margin: -10px;
-	padding-left:20px;
+	margin: -9px;
+	padding-left: 20px;
+	box-shadow: 5px 10px 10px grey;
 }
 #pageTitle{
 	padding-left:20px;
 }
 #pageSubTitle{
-	padding-left: 1015px;
+	padding-left: 1010px;
 	color: white;
 }
-#navBut{
-	padding-top:10px;
-	margin-left: -10px;
-	margin-right: -10px;
-	padding-left:20px;
-	padding-right:10px;
+.container{
+	margin-left:270px;
+	border: 2px solid #455A64;
+	width: 800px;
+	height: 100px;
 }
-#navBut > a:link{
-	color: black;
-	text-decoration: none;	
-}
-#navBut > a:hover{
-	background-color: #f9fbe7;
+.container > table{
+	color: #455A64;	
 }
