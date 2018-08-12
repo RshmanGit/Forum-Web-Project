@@ -1,0 +1,153 @@
+h1{
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5vw;
+}
+h2{
+
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4vw;
+}
+h3{
+
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3vw;
+}
+h4{
+
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2vw;
+}
+h5{
+
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1vw;
+}
+p{
+
+    font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 0.75vw;
+}
+label{
+	font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 0.75vw;
+}
+
+
+
+body{
+	font-family: 'Ostrich Sans';
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+.navbar{
+	position: relative;
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.logoSpace{
+	float: left;
+	padding-left: 2%;
+	width: 5%;
+}
+
+.navtabs{
+	float: right;
+	padding-right: 1%;
+	width: 30%;
+}
+
+.navtabs ul > li{
+	display: inline;
+	list-style: none;
+}
+
+#navbut{
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5vw;
+
+	margin-left: 4%;
+}
+
+#navbut:hover{
+	color: #E65100;
+}
+
+
+
+.container{
+	width: 70%;
+	height: 70%;
+
+	margin: auto;
+}
+
+.pref ul > li{
+	display: inline;
+}
+
+#dotline{
+	border: 0; 
+	border-bottom: 1px dashed black;
+	background: #999;
+}
+
+.card div{
+	display: block;
+	float: left;
+	padding: 1%;
+}
+
+#tags > li{
+	display: block;
+	float: left;
+	padding-right: 2%;
+}
+
+.desc{
+	height: 20%;
+}
+
+#tags{
+	margin-left: -6.5%;
+	margin-top: -2%;
+}
+
+#tag{
+	border-radius: 10%;
+	text-decoration: none;
+	background-color: #FFA726;
+	color: white;
+}
+#tag:hover{
+	background-color: white;
+	color: #FFA726;
+}
+.rank{
+	margin-top: 1.7%;
+}

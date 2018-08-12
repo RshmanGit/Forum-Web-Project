@@ -4,48 +4,315 @@
 	<meta charset="ISO-8859-1">
 	<title>Forum Site</title>
 	<link rel="stylesheet" type="text/css" href="./assets/style/index.css">
+	<!--fonts css-->
+	<link rel="stylesheet" href="https://github.com/theleagueof/ostrich-sans/blob/master/webfonts/ostrich-sans.css">
 </head>
 <body>
 	
-	<table class="nav">
-		<tr>
-			<td><img alt="QuestionMark" src="./assets/images/questionmark.png" height="30" width="30"></td>
-			<td id="pageTitle"> <h1>Forum Site</h1> </td>
-			<td id="pageSubTitle"> <p><i>Ask Questions</i></p> </td>
-		</tr>
-	</table>
-	
-	<br>
-	<br>
-	
-	<div class="content">
-		<div class="container">
-		
-			<table>
-				<tr class="card-header">
-					<td class="author"> 
-						<label>Posted By:</label>
-						<b> {{ user }}</b>
-					</td>
-					<td class="posted-date">
-						<label>Date:</label>
-						<label>{{ dd / mm / yy }}</label>
-					</td>
-				</tr>
-				
-				<tr>
-					<td class="question-title">
-						<h3>{{ Question ?? }}</h3>
-					</td>
-				</tr>
-				<tr>
-					<td class"answered">
-						<img alt="answered" src="./assets/images/tickmark.png">
-					</td>
-				</tr>
-			</table>
-		
+	<nav class="navbar">
+		<div class="logoSpace">
+			<span style="font-size: 3vw;"><span style="color: #E65100;">Open</span>Forum</span>
 		</div>
+		<div class="navtabs">
+			<ul>
+				<li><a id="navbut" href="/home">Home</a></li>
+				<li><a id="navbut" href="/ask">Ask-Question</a></li>
+				<li><a id="navbut" href="/profile">Profile</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="container">
+				
+		<div class="pref">
+			<ul>
+				<li>
+					<label>sort by:</label>
+					<select name="sortby">
+						<option style="font-size: 0.75vw;">Top</option>
+						<option style="font-size: 0.75vw;">New</option>
+						<option style="font-size: 0.75vw;">Subscription</option>
+					</select>
+				</li>
+				<li>
+					<label>Trending:</label>
+				</li>
+				<li>
+					<span style="font-size:0.75vw;"><a href="#" id="hash">#yodawg</a></span>
+				</li>
+				<li>
+					<span style="font-size:0.75vw;"><a href="#" id="hash">#snoop</a></span>
+				</li>
+				<li>
+					<span style="font-size:0.75vw;"><a href="#" id="hash">#athensgate</a></span>
+				</li>
+				<li>
+					<span style="font-size:0.75vw;"><a href="#" id="hash">#socrates</a></span>
+				</li>
+			</ul>	
+			<hr id="dotline">
+		</div>
+
+		<frame class="cards">
+
+			<div class="card">
+					
+				<div class="cardID">
+					<h5>1</h5>
+				</div>
+
+				<div class="votes">
+					<h5 style="color:#E65100;">256</h5>
+				</div>
+
+				<div class="rank">
+					<span style="font-size:2vw; color: #43A047">+</span>
+					<span style="font-size:2vw; color: #E53935">-</span>
+					<br>
+					<span style="font-size:0.75vw; color: grey">1 comment</span>
+					<br>
+					<span style="font-size:0.75vw; color: #E65100">Add Comment</span>
+				</div>
+
+				<div class="dp" style="width: 8%; height: 8%; margin-top:1.5%;">
+					<img src="./assets/images/dp1.png" alt="user1" style="width: 100%; height: 100%;">
+				</div>
+
+				<div class="desc">
+					<h5>How to control the spacings of the x Axis label positions in a stacked bar chart?</h5>
+					<ul id="tags">
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> css </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> web-design </a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+
+			<div class="card">
+					
+				<div class="cardID">
+					<h5>2</h5>
+				</div>
+
+				<div class="votes">
+					<h5 style="color:#E65100;">125</h5>
+				</div>
+
+				<div class="rank">
+					<span style="font-size:2vw; color: #43A047">+</span>
+					<span style="font-size:2vw; color: #E53935">-</span>
+					<br>
+					<span style="font-size:0.75vw; color: grey">5 comments</span>
+					<br>
+					<span style="font-size:0.75vw; color: #E65100">Add Comment</span>
+				</div>
+
+				<div class="dp" style="width: 8%; height: 8%; margin-top:1.5%;">
+					<img src="./assets/images/dp2.png" alt="user1" style="width: 100%; height: 100%;">
+				</div>
+
+				<div class="desc">
+					<h5>How to schedule a method in .net core?</h5>
+					<ul id="tags">
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> net </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> silverlight </a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+
+			<div class="card">
+					
+				<div class="cardID">
+					<h5>3</h5>
+				</div>
+
+				<div class="votes">
+					<h5 style="color:#E65100;">100</h5>
+				</div>
+
+				<div class="rank">
+					<span style="font-size:2vw; color: #43A047">+</span>
+					<span style="font-size:2vw; color: #E53935">-</span>
+					<br>
+					<span style="font-size:0.75vw; color: grey">10 comments</span>
+					<br>
+					<span style="font-size:0.75vw; color: #E65100">Add Comment</span>
+				</div>
+
+				<div class="dp" style="width: 8%; height: 8%; margin-top:1.5%;">
+					<img src="./assets/images/dp3.png" alt="user1" style="width: 100%; height: 100%;">
+				</div>
+
+				<div class="desc">
+					<h5>mysqli - how to limit the size of upload while using blob</h5>
+					<ul id="tags">
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> DBMS </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> MySQL </a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+
+			<div class="card">
+					
+				<div class="cardID">
+					<h5>4</h5>
+				</div>
+
+				<div class="votes">
+					<h5 style="color:#E65100;">69</h5>
+				</div>
+
+				<div class="rank">
+					<span style="font-size:2vw; color: #43A047">+</span>
+					<span style="font-size:2vw; color: #E53935">-</span>
+					<br>
+					<span style="font-size:0.75vw; color: grey">100 comments</span>
+					<br>
+					<span style="font-size:0.75vw; color: #E65100">Add Comment</span>
+				</div>
+
+				<div class="dp" style="width: 8%; height: 8%; margin-top:1.5%;">
+					<img src="./assets/images/dp4.png" alt="user1" style="width: 100%; height: 100%;">
+				</div>
+
+				<div class="desc">
+					<h5>Queryselector remove redundant comma separated list of items</h5>
+					<ul id="tags">
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> DBMS </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> MySQL </a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+
+			<div class="card">
+					
+				<div class="cardID">
+					<h5>5</h5>
+				</div>
+
+				<div class="votes">
+					<h5 style="color:#E65100;">30</h5>
+				</div>
+
+				<div class="rank">
+					<span style="font-size:2vw; color: #43A047">+</span>
+					<span style="font-size:2vw; color: #E53935">-</span>
+					<br>
+					<span style="font-size:0.75vw; color: grey">20 comments</span>
+					<br>
+					<span style="font-size:0.75vw; color: #E65100">Add Comment</span>
+				</div>
+
+				<div class="dp" style="width: 8%; height: 8%; margin-top:1.5%;">
+					<img src="./assets/images/dp1.png" alt="user1" style="width: 100%; height: 100%;">
+				</div>
+
+				<div class="desc">
+					<h5>Authenticating app with Google Vision API</h5>
+					<ul id="tags">
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> GCP </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> authentication </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> Compter vision </a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+
+			<div class="card">
+					
+				<div class="cardID">
+					<h5>6</h5>
+				</div>
+
+				<div class="votes">
+					<h5 style="color:#E65100;">30</h5>
+				</div>
+
+				<div class="rank">
+					<span style="font-size:2vw; color: #43A047">+</span>
+					<span style="font-size:2vw; color: #E53935">-</span>
+					<br>
+					<span style="font-size:0.75vw; color: grey">20 comments</span>
+					<br>
+					<span style="font-size:0.75vw; color: #E65100">Add Comment</span>
+				</div>
+
+				<div class="dp" style="width: 8%; height: 8%; margin-top:1.5%;">
+					<img src="./assets/images/dp3.png" alt="user1" style="width: 100%; height: 100%;">
+				</div>
+
+				<div class="desc">
+					<h5>How to print foreign key of this model in django?</h5>
+					<ul id="tags">
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> Django </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> SQLite </a></li>
+						<li><a id="tag" style="font-size:0.75vw;" href="#"> RDBMS </a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</frame>
+
 	</div>
 
 </body>
