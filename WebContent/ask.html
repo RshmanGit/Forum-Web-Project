@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Forum Site</title>
+	<link rel="stylesheet" type="text/css" href="./assets/style/index.css">
+	<!--fonts css-->
+	<link rel="stylesheet" href="https://github.com/theleagueof/ostrich-sans/blob/master/webfonts/ostrich-sans.css">
+</head>
+<body>
+	
+	<nav class="navbar">
+		<div class="logoSpace">
+			<span style="font-size: 3vw;"><span style="color: #E65100;">Open</span>Forum</span>
+		</div>
+		<div class="navtabs">
+			<ul>
+				<li><a id="navbut" href="/home/rshman/Desktop/Study Material/7th sem/Web Programming/Forum-Web-Project/WebContent/index.html">Home</a></li>
+				<li><a id="navbut" href="/home/rshman/Desktop/Study Material/7th sem/Web Programming/Forum-Web-Project/WebContent/ask.html">Ask-Question</a></li>
+				<li><a id="navbut" href="/profile">Profile</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+    <div class="container" style="align-content: center">
+        <form name="ask" method="POST" action="#" onsubmit="return validateForm()">
+            <ul class="questform">
+
+                <li>
+                    <label for="question">Question:</label>
+                    <br>
+                    <input id="question" name="question">
+                    <span class="invalidQuest"></span>
+                </li>
+
+                <li>
+                    <label>Question Description: </label>
+                    <br>
+                    <textarea name="desc" rows="15%" cols="60%"></textarea>
+                    <span class="invalidDesc"></span>
+                </li>
+
+
+                <li>
+                    <label for="reltag">Tags:</label>
+                    <br>
+                    <input id="reltag" name="tags">
+                    <span class="invalidTag"></span>
+                    <br>
+                    <button>+Add tags</button>
+                </li>
+
+                <li>
+                    <input type="submit" value="Submit">
+                </li>
+
+            </ul>
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="./assets/js/ask.js"></script>
+
+</body>
+</html>

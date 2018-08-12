@@ -43,7 +43,7 @@ label{
 	font-family: 'Ostrich Sans';
     font-weight: 900;
     font-style: normal;
-    font-size: 0.75vw;
+    font-size: 1vw;
 }
 
 
@@ -150,4 +150,19 @@ body{
 }
 .rank{
 	margin-top: 1.7%;
+}
+
+.container form{
+	padding-left: 25%;
+}
+
+.questform > li{
+
+	list-style: none;
+	padding: 1%;
+
+}
+
+.invalid{
+	box-shadow: 3px 3px 5px #E53935;
 }
